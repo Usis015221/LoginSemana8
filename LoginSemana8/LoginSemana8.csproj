@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72878729-5CDB-4662-83A8-A12003E63C1A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LoginSemana8</RootNamespace>
+    <AssemblyName>Programa Multifunciones Matematicas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acercade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acercade.Designer.cs">
+      <DependentUpon>Acercade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda II.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda II.Designer.cs">
+      <DependentUpon>Ayuda II.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda III.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda III.Designer.cs">
+      <DependentUpon>Ayuda III.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda.Designer.cs">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculadora.Designer.cs">
+      <DependentUpon>Calculadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clases\clsOpcion1.cs" />
+    <Compile Include="Conversor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conversor.Designer.cs">
+      <DependentUpon>Conversor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Saludo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Saludo.Designer.cs">
+      <DependentUpon>Saludo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Acercade.resx">
+      <DependentUpon>Acercade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda II.resx">
+      <DependentUpon>Ayuda II.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda III.resx">
+      <DependentUpon>Ayuda III.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda.resx">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora.resx">
+      <DependentUpon>Calculadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conversor.resx">
+      <DependentUpon>Conversor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Saludo.resx">
+      <DependentUpon>Saludo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
