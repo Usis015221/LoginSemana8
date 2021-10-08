@@ -32,6 +32,7 @@ namespace LoginSemana8
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.saludoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conversorDePesoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,7 +40,7 @@ namespace LoginSemana8
             this.ayudaParteIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaParteIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaParteIIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saludoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +62,7 @@ namespace LoginSemana8
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saludoToolStripMenuItem,
+            this.usuariosToolStripMenuItem,
             this.calculadoraToolStripMenuItem,
             this.conversorDePesoToolStripMenuItem,
             this.acercaDeToolStripMenuItem,
@@ -70,6 +72,13 @@ namespace LoginSemana8
             this.menuStrip1.Size = new System.Drawing.Size(1289, 33);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // saludoToolStripMenuItem
+            // 
+            this.saludoToolStripMenuItem.Name = "saludoToolStripMenuItem";
+            this.saludoToolStripMenuItem.Size = new System.Drawing.Size(83, 29);
+            this.saludoToolStripMenuItem.Text = "Saludo";
+            this.saludoToolStripMenuItem.Click += new System.EventHandler(this.saludoToolStripMenuItem_Click);
             // 
             // calculadoraToolStripMenuItem
             // 
@@ -105,30 +114,30 @@ namespace LoginSemana8
             // ayudaParteIToolStripMenuItem
             // 
             this.ayudaParteIToolStripMenuItem.Name = "ayudaParteIToolStripMenuItem";
-            this.ayudaParteIToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.ayudaParteIToolStripMenuItem.Size = new System.Drawing.Size(229, 34);
             this.ayudaParteIToolStripMenuItem.Text = "Ayuda Parte I";
             this.ayudaParteIToolStripMenuItem.Click += new System.EventHandler(this.ayudaParteIToolStripMenuItem_Click);
             // 
             // ayudaParteIIToolStripMenuItem
             // 
             this.ayudaParteIIToolStripMenuItem.Name = "ayudaParteIIToolStripMenuItem";
-            this.ayudaParteIIToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.ayudaParteIIToolStripMenuItem.Size = new System.Drawing.Size(229, 34);
             this.ayudaParteIIToolStripMenuItem.Text = "Ayuda Parte II";
             this.ayudaParteIIToolStripMenuItem.Click += new System.EventHandler(this.ayudaParteIIToolStripMenuItem_Click);
             // 
             // ayudaParteIIIToolStripMenuItem
             // 
             this.ayudaParteIIIToolStripMenuItem.Name = "ayudaParteIIIToolStripMenuItem";
-            this.ayudaParteIIIToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.ayudaParteIIIToolStripMenuItem.Size = new System.Drawing.Size(229, 34);
             this.ayudaParteIIIToolStripMenuItem.Text = "Ayuda Parte III";
             this.ayudaParteIIIToolStripMenuItem.Click += new System.EventHandler(this.ayudaParteIIIToolStripMenuItem_Click);
             // 
-            // saludoToolStripMenuItem
+            // usuariosToolStripMenuItem
             // 
-            this.saludoToolStripMenuItem.Name = "saludoToolStripMenuItem";
-            this.saludoToolStripMenuItem.Size = new System.Drawing.Size(83, 29);
-            this.saludoToolStripMenuItem.Text = "Saludo";
-            this.saludoToolStripMenuItem.Click += new System.EventHandler(this.saludoToolStripMenuItem_Click);
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(96, 29);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // Inicio
             // 
@@ -163,5 +172,6 @@ namespace LoginSemana8
         private System.Windows.Forms.ToolStripMenuItem ayudaParteIIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaParteIIIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saludoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
     }
 }

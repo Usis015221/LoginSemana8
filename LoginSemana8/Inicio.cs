@@ -74,5 +74,12 @@ namespace LoginSemana8
             f1.Show();
             this.Hide();
         }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           Usuarios f1 = new Usuarios();
+            f1.Show();
+            this.Hide();
+        }
     }
 }
